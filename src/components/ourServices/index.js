@@ -2,7 +2,7 @@
 
 function OurServices() {
     return(
-        <div className="container our-section">
+        <div className="container our-section" id="our-services">
             <div className="row">
                 <div className="col-lg group-47">
                     <img src={require("../../assets/images/img_service.png")} alt=""/>

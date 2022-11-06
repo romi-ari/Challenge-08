@@ -1,13 +1,23 @@
-
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+
+    const navigate = useNavigate();
+  
+    function handleLogOut(e) {
+        e.preventDefault();
+        localStorage.removeItem("token");
+        navigate('/')
+    }
+
     return(
        <div>
             <header>
                 <div className="navbar-container fixed-top">
                     <nav className="navbar navbar-expand-lg ms-auto navbar-light">
                     <div className="container-md">
-                        <div className="logo"></div>
+                    <Link to='/'className="logo"></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
@@ -17,24 +27,22 @@ function Header() {
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                             <div className="offcanvas-body">
-                                <ul className="nav nav-pills ms-auto list-unstyled navbar-nav">
+                                <ul className="nav nav-pills ms-auto list-unstyled navbar-nav d-flex gap-3">
                                     <li className="nav-item">
-                                        <a className="nav-link text-dark" href="/#">Our Services</a>
+                                        <a className="nav-link text-dark" href="#our-services">Our Services</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-dark" href="/#">Why Us</a>
+                                        <a className="nav-link text-dark" href="#why-us">Why Us</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-dark" href="/#">Testimonial</a>
+                                        <a className="nav-link text-dark" href="#testimonial">Testimonial</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link text-dark" href="/#">FAQ</a>
+                                        <a className="nav-link text-dark" href="#faq">FAQ</a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="nav-item d-flex gap-2">
                                         <button type="button" className="btn">Register</button>
-                                    </li>
-                                    <li className="nav-item">
-                                        <button type="button" className="btn">Login</button>
+                                        <button type="button" className="btn" onClick={handleLogOut}>LogOut</button>
                                     </li>
                                 </ul>
                             </div>

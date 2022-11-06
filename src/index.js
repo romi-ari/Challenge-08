@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
 import FilterCars from './filterCar';
+import { Protected } from './components';
 
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
@@ -20,7 +21,7 @@ root.render(
               <LandingPage />
             } />
             <Route path='/cars' element= {
-              <FilterCars />
+              <Protected><FilterCars /></Protected>
             } />
           </Routes>
       </BrowserRouter>

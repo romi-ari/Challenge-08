@@ -7,5 +7,8 @@ import OurServices from './ourServices'
 import Testimonial from './testimonial'
 import WhyUs from './whyUs'
 import Banner from './banner'
+import ListCars from './listCars'
+import Login from './login'
+import Protected from './protected'
 
-export { Faq, FilterCars, Footer, Header1, Header2, OurServices, Testimonial, WhyUs, Banner }
+export { Faq, FilterCars, Footer, Header1, Header2, OurServices, Testimonial, WhyUs, Banner, ListCars, Login, Protected }
