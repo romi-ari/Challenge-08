@@ -7,7 +7,7 @@ function Login() {
     }
 
     return(
-        <GoogleOAuthProvider clientId='1055147214459-4rto09ouqlnqtvvipl6gmlfst6eghdmj.apps.googleusercontent.com'>
+        <GoogleOAuthProvider clientId='YOUR_GOOGLE_CLIENT_ID'>
             <GoogleLogin
                 onSuccess={handleLogin}
                 onError={() => {
