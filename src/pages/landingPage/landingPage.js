@@ -1,5 +1,7 @@
-import './assets/css/styles.css'
-import { Banner, Faq, Footer, Testimonial, WhyUs, OurServices, Header1 } from "./components";
+import React from 'react';
+import '../../assets/css/cari.css';
+import '../../assets/css/styles.css';
+import { Banner, Faq, Footer, Testimonial, WhyUs, OurServices, Header1 } from '../../components';
 
 function LandingPage() {
   return (

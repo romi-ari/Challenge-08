@@ -1,5 +1,5 @@
-
-
+/* eslint-disable */
+import React from 'react';
 function Banner() {
     return(
         <div className="container cta-banner" id="cta-banner">

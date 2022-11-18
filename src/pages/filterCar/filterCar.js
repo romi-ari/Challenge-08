@@ -1,5 +1,7 @@
-import './assets/css/cari.css'
-import { Footer, FilterCars, Header2 } from "./components";
+import React from 'react';
+import '../../assets/css/cari.css';
+import '../../assets/css/styles.css';
+import { Footer, FilterCars, Header2 } from '../../components';
 
 function CarsFilter() {
   return (

@@ -1,6 +1,8 @@
-import axios from 'axios'
+/* eslint-disable */
 
-export const GET_CARS = "GET_CARS"
+import axios from 'axios';
+
+export const GET_CARS = 'GET_CARS';
 
 export const getCars = () => {
     console.log('2. Masuk Action')

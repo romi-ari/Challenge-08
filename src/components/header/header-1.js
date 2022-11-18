@@ -1,10 +1,12 @@
+/* eslint-disable */
+import React from 'react';
 import { Link } from "react-router-dom";
 import {Login} from "../index";
 
 function Header() {
         
     return(
-       <div>
+       <div data-testid="total">
             <header>
                 <div className="navbar-container fixed-top">
                     <nav className="navbar navbar-expand-lg ms-auto navbar-light">
@@ -21,7 +23,7 @@ function Header() {
                                 <div className="offcanvas-body">
                                     <ul className="nav nav-pills ms-auto list-unstyled navbar-nav d-flex gap-3">
                                         <li className="nav-item">
-                                            <a className="nav-link text-dark" href="#our-services">Our Services</a>
+                                            <a className="nav-link text-dark" href="#our-services" id='our-services'>Our Services</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link text-dark" href="#why-us">Why Us</a>

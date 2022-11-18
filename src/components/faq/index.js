@@ -1,4 +1,5 @@
-
+/* eslint-disable */
+import React from 'react';
 function Faq() {
     return(
         <div className="container faq" id="faq">
@@ -11,7 +12,7 @@ function Faq() {
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item pd-16">
                             <h2 className="accordion-header" id="headingOne">
-                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Apa saja syarat yang dibutuhkan?</button>
+                            <button id="buttonone" className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Apa saja syarat yang dibutuhkan?</button>
                             </h2>
                             <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">

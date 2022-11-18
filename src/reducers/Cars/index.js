@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { GET_CARS } from "../../actions/carsAction";
 const initialState = {
     getCarsResult : false,

@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "@react-oauth/google": "^0.4.0",
+    "@testing-library/dom": "^8.19.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^14.4.3",
     "axios": "^1.1.3",
     "dotenv": "^16.0.3",
     "react": "^18.2.0",
@@ -21,8 +22,32 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --ci --coverage --reporters=default",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!/node_modules/",
+      "!src/actions/carsAction.js",
+      "!src/index.js",
+      "!src/components/index.js",
+      "!src/components/filterCars/index.js",
+      "!src/components/footer/index.js",
+      "!src/components/listCars/index.js",
+      "!src/components/login/index.js",
+      "!src/components/header/header-1.js",
+      "!src/components/header/header-2.js",
+      "!src/components/protected/index.js",
+      "!src/pages/index.js",
+      "!src/pages/filterCar/filterCar.js",
+      "!src/pages/landingPage/landingPage.js",
+      "!src/reducers/index.js",
+      "!src/reducers/Cars/index.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/)"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +66,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^27.5.1"
   }
 }

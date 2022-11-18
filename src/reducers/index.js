@@ -1,5 +1,6 @@
-import { combineReducers } from "redux";
-import CarsReducer from './Cars'
+/* eslint-disable */
+import { combineReducers } from 'redux';
+import CarsReducer from './Cars';
 
 export default combineReducers({
     CarsReducer

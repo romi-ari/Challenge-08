@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 function WhyUs() {
     return(
         <div className="container why-us" id="why-us">
